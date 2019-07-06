@@ -1,0 +1,67 @@
+@import 'modules/base';
+#section1 {
+    height: calc(100vh - 100px);
+    .wave { 
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .svg-image {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: -4rem;
+        top: -1rem;
+    }
+    .text-container {
+        padding-left: 10%;
+        padding-top: 2rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+        font-weight: normal;
+    }
+    h4 {
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    .contact-form {
+        input {
+            background: $white-color;
+            box-shadow: 0px 8px 24px rgba(209, 220, 246, 0.48);
+            border-radius: 4rem;
+            line-height: 3rem;
+            height: 3rem;
+            width: 20rem;
+            margin-right: 1rem;
+            padding: 0 2rem;
+            outline: none;
+            border: none;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: $grey-color;
+            opacity: 0.64;
+        }
+        button {
+            background: $blue-color;
+            box-shadow: 0px 8px 24px rgba(0, 166, 255, 0.24);
+            border-radius: 8rem;
+            outline: none;
+            border: none;
+            color: $white-color;
+            line-height: 3rem;
+            height: 3rem;
+            width: 9rem;
+            text-align: center;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
