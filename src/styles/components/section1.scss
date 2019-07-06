@@ -14,15 +14,16 @@
         width: 100%;
         height: auto;
         position: absolute;
-        left: -4rem;
-        top: -1rem;
+        img {
+            width: 100%;
+        }
     }
     .text-container {
         padding-left: 10%;
         padding-top: 2rem;
     }
     h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
         line-height: 4rem;
         font-weight: normal;
     }
@@ -30,6 +31,46 @@
         font-weight: normal;
         font-size: 1rem;
         line-height: 1.6rem;
+    }
+    .trusted {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.02em;
+        color: $primary-color;
+        text-align: center;
+        width: 100%;
+        margin-top: 15rem;
+        opacity: 0.72;
+    }
+    .divider {
+        text-align: center;
+        width: 100%;
+        margin-top: 3rem;
+        img {
+            display: block;
+            margin: auto;
+        }
+    }
+    .brands-list {
+        width: 100%;
+        padding: 2rem 5rem;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            align-items: center;
+            font-weight: normal;
+            width: 100%;
+            li {
+                display: inline-block;
+                width: 20%;
+                img {
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
     }
     .contact-form {
         input {
