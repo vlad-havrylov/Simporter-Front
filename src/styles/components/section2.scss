@@ -1,0 +1,21 @@
+@import 'modules/base';
+
+#section2 {
+    padding-left: 10%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .features {
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 1.8rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #2B3D6B;
+        opacity: 0.72;
+    }
+    .keys-success {
+        font-size: 2rem;
+        line-height: 2.6rem;
+        color: #2B3D6B;
+    }
+}

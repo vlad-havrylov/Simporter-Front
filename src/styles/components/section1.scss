@@ -1,6 +1,8 @@
 @import 'modules/base';
 #section1 {
-    height: calc(100vh - 100px);
+    .vh-80 {
+        height: calc(100vh - 100px);
+    }
     .wave { 
         position: absolute;
         top: 4rem;
@@ -14,6 +16,7 @@
         width: 100%;
         height: auto;
         position: absolute;
+        max-height: 80vh;
         img {
             width: 100%;
         }
@@ -52,6 +55,22 @@
             margin: auto;
         }
     }
+    .quote {
+        width: 50%;
+        margin: auto;
+        margin-top: 3rem;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        span {
+            display: block;
+            font-size: 1rem;
+            line-height: 2.5rem;
+            text-align: right;
+            padding-right: 2rem;
+        }
+    }
     .brands-list {
         width: 100%;
         padding: 2rem 5rem;
@@ -61,6 +80,7 @@
             list-style-type: none;
             align-items: center;
             font-weight: normal;
+            padding: 0;
             width: 100%;
             li {
                 display: inline-block;
