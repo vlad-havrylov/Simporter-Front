@@ -1,25 +1,30 @@
-.section-header {
-    padding: 0rem 0rem 0rem 10rem;
+.container-section {
 
-    .number {
-        font-weight: bold;
-        font-size: 6rem;
-        line-height: 11rem;
-        color: #00A6FF;
-        opacity: 0.08;
-    }
+    height: 80vh;
 
-    .heading {
-        font-size: 1.8rem;
-        line-height: 2.2rem;
-        color: #2B3D6B;
-        padding-bottom: 1rem;
-    }
+    .section-header {
+        padding: 0rem 0rem 0rem 10rem;
 
-    .sub-heading {
-        font-size: 1.1rem;
-        line-height: 1.9rem;
-        color: #2B3D6B;
-        opacity: 0.8;
+        .number {
+            font-weight: bold;
+            font-size: 6rem;
+            line-height: 8rem;
+            color: #00A6FF;
+            opacity: 0.08;
+        }
+
+        .heading {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            color: #2B3D6B;
+            padding-bottom: 1rem;
+        }
+
+        .sub-heading {
+            font-size: 1.1rem;
+            line-height: 1.9rem;
+            color: #2B3D6B;
+            opacity: 0.8;
+        }
     }
 }
