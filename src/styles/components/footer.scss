@@ -1,4 +1,81 @@
 @import 'modules/base';
+
 footer {
-    
+    .row:first-child {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+
+    .logo {
+        padding: 0 4rem;
+    }
+
+    label {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        letter-spacing: 0.1em;
+        color: $primary-color;
+        text-transform: uppercase;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            padding: 0.5rem 0;
+
+            a {
+                font-size: 1rem;
+                line-height: 1.4rem;
+                color: $primary-color;
+                opacity: 0.64;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .copyright {
+        padding: 2rem 5%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.875rem;
+        div {
+            text-align: center;
+            color: $primary-color;
+            font-weight: 500;
+
+            &:first-child {
+                text-align: left;
+                opacity: 0.74;
+                .like {
+                    width: 0.875rem;
+                    height: 0.875rem;
+                    position: relative;
+                    top: 2px;
+                    margin: 0 0.2rem;
+                }
+            }
+
+            &:last-child {
+                text-align: right;
+            }
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline-block;
+                padding: 0 0.5rem;
+                a {
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    letter-spacing: 0.05em;
+                    opacity: 0.4;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
 }

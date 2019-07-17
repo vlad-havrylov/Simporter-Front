@@ -33,9 +33,9 @@
         }
 
         .action-form {
-            margin: auto;
             text-align: center;
-            margin: 3rem 0;
+            margin: 3rem auto;
+            max-width: 1280px;
 
             input {
                 border-radius: 4rem;
