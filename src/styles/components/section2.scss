@@ -1,10 +1,10 @@
 @import 'modules/base';
 
 #section2 {
-    padding-left: 10%;
     padding-top: 5rem;
     padding-bottom: 5rem;
     .features {
+        padding-left: 10%;
         font-weight: bold;
         font-size: 1rem;
         line-height: 1.8rem;
@@ -14,6 +14,7 @@
         opacity: 0.72;
     }
     .keys-success {
+        padding-left: 10%;
         font-size: 2rem;
         line-height: 2.6rem;
         color: #2B3D6B;
