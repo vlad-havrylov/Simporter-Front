@@ -1,10 +1,12 @@
 @import 'modules/base';
 header {    
+    padding: 0 10%;
     position: sticky;
     top: 0;
     z-index: 1071;
     background: #ffffff;
     .logo {
+        padding: 0;
         display: flex;
         justify-content: start;
         align-items: center;
