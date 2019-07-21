@@ -51,6 +51,9 @@
                 color: #ffffff;
                 text-transform: uppercase;
                 background: rgba($color: #ffffff, $alpha: 0.16);
+                @media (max-width: 768px) {
+                    width: 62%;
+                }
                 &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
                     color: white;
                     opacity: 0.64;
@@ -82,7 +85,9 @@
                 width: 14%;
                 text-align: center;
                 text-transform: uppercase;
-
+                @media (max-width: 768px) {
+                    width: 24%;
+                }
                 &:hover {
                     cursor: pointer;
                 }

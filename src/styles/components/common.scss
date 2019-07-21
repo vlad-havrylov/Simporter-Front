@@ -1,6 +1,12 @@
+html, body {
+    overflow-x: hidden;
+}
 .container-section {
 
     height: 90vh;
+    @media (max-width: 768px) {
+        height: auto;
+    }
 
     .section-header {
         padding: 0rem 0rem 0rem 15rem;
@@ -36,7 +42,7 @@
 
     .container-section {
         .section-header {
-            padding: 0 0 0 3rem;
+            padding: 0 3rem 0 3rem;
         }
     }
 }

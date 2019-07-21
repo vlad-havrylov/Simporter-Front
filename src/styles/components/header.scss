@@ -14,6 +14,9 @@ header {
             width: 10rem;
             height: 2rem;
         }
+        @media(max-width: 768px){
+            padding: 2rem 0.5rem 0 0.5rem;
+        }
     }
     ul {
         padding: 0;
@@ -29,6 +32,9 @@ header {
             a {
                 color: $primary-color;
             }
+        }
+        @media (max-width: 768px) {
+            display: none;
         }
         &.nav {
             li:not(.active) {

@@ -2,6 +2,9 @@
 #section1 {
     .vh-80 {
         height: calc(100vh - 100px);
+        @media (max-width: 768px) {
+            height: auto;
+        }
     }
     .wave { 
         position: absolute;
@@ -46,7 +49,7 @@
         margin-top: 15rem;
         opacity: 0.72;
         @media (max-width: 768px) {
-            margin-top: 20rem;
+            margin-top: 25rem;
         }
     }
     .divider {
@@ -100,7 +103,7 @@
                 li {
                     width: 100%;
                     display: block;
-                    margin: 1rem 0;
+                    margin: 3rem 0;
                 }
             }
         }
