@@ -124,7 +124,11 @@
             text-transform: uppercase;
             color: $grey-color;
             opacity: 0.64;
-            
+            @media (max-width: 768px) {
+                font-size: 0.9rem;
+                margin-right:0;
+                width: 60%;
+            }
         }
         button {
             background: $blue-color;
@@ -140,15 +144,9 @@
             &:hover {
                 cursor: pointer;
             }
-        }
-        
-        @media (max-width: 768px) {
-         input {
-             width: 55%
-         }   
-         button {
-             width: 35%;
-         }
+            @media (max-width: 768px) {
+                width: 35%;
+            }
         }
     }
 }
