@@ -28,3 +28,15 @@
         }
     }
 }
+
+@media(max-width: 768px) {
+    .wave {
+        display: none;
+    }
+
+    .container-section {
+        .section-header {
+            padding: 0 0 0 3rem;
+        }
+    }
+}
