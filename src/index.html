@@ -23,6 +23,13 @@
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/fonts/ubuntu/ubuntu.css" media="none" onload="if(media!='all')media='all'">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_uc6wnW2z29UHYrhdoHr0S");
+    })();
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6Ldk47IUAAAAAGlZGrolQkgeNsApDdEpFItgeOaV"></script>
 </head>
 
 <body>
@@ -348,12 +355,6 @@
       a.appendChild(r);
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
   </script>
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-  <script type="text/javascript">
-    (function(){
-       emailjs.init("user_uc6wnW2z29UHYrhdoHr0S");
-    })();
- </script>
   <script type="text/javascript">
     function validateEmail(email) {
       var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -369,20 +370,24 @@
         alert("Incorrect email");
         return;
       }
-      var service_id = 'default_service';
+      var service_id = 'gmail_new';
       var template_id = 'simcastReportTemplate';
       var template_params = {
         from_email: emailFromForm,
         report_name: 'Simporter landing page'
       }
-      emailjs.send(service_id, template_id, template_params).then(
-        function (response) {
-          alert("Email sent");
-        },
-        function (error) {
-          alert("Error when sending email")
-        }
-      );
+      grecaptcha.ready(function () {
+        grecaptcha.execute('6Ldk47IUAAAAAGlZGrolQkgeNsApDdEpFItgeOaV', { action: 'homepage' }).then(function (token) {
+          emailjs.send(service_id, template_id, template_params).then(
+            function (response) {
+              alert("Email sent");
+            },
+            function (error) {
+              alert("Error when sending email")
+            }
+          );
+        });
+      });
     }
   </script>
 </body>
