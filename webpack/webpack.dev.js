@@ -64,6 +64,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       hash: false,
+      template: './' + src_Path + '/privacy-policy.html',
+      filename: 'privacy-policy.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: false,
       template: './' + src_Path + '/index.html',
       filename: 'index.html'
     })

@@ -1,0 +1,30 @@
+#privacy-policy {
+    margin-top: 100px;
+    text-align: center;
+    padding: 0 10%;
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0 15%;
+        text-align: left;
+        li {
+            .title {
+                font-size: 2rem;
+                font-weight: bold;
+                letter-spacing: -2px;
+                line-height: 45px;
+                padding-bottom: 10px;
+                border-bottom: 2px solid #eee;
+                margin: 10px 0;
+            }
+            .content {
+                font-size: 1rem;
+                line-height: 2;
+            }
+            margin-bottom: 1rem;
+        }
+    }
+}
