@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const LiveReloadPlugin = require('webpack-livereload-plugin');
 
 const {
   prod_Path,
@@ -61,6 +62,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'style.css',
     }),
+    new LiveReloadPlugin(),
     new HtmlWebpackPlugin({
       inject: false,
       hash: false,
@@ -72,6 +74,12 @@ module.exports = {
       hash: false,
       template: './' + src_Path + '/index.html',
       filename: 'index.html'
+    }), 
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: false,
+      template: './' + src_Path + '/how-it-works.html',
+      filename: 'how-it-works.html'
     })
   ]
 };
