@@ -23,13 +23,6 @@
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/fonts/ubuntu/ubuntu.css" media="none" onload="if(media!='all')media='all'">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("user_uc6wnW2z29UHYrhdoHr0S");
-    })();
-  </script>
-  <script src="https://www.google.com/recaptcha/api.js?render=6Ldk47IUAAAAAGlZGrolQkgeNsApDdEpFItgeOaV"></script>
 </head>
 
 <body>
@@ -41,8 +34,8 @@
         </div>
         <div class="col-md-6 p-0 float-right">
           <ul class="nav navbar-collapse">
-            <li class="active">
-              <a href="javasript:void(0);" title="Home">
+            <li>
+              <a href="index.html" title="Home">
                 Home
               </a>
             </li>
@@ -51,8 +44,8 @@
                 Products
               </a>
             </li>
-            <li>
-              <a href="how-it-works.html" title="How it works">
+            <li class="active">
+              <a href="javasript:void(0);" title="How it works">
                 How it works
               </a>
             </li>
@@ -76,79 +69,27 @@
       </div>
     </div>
   </header>
-  <div id="section1">
-    <div class="wave">
-      <img src="assets/img/Wave.svg" alt="wave" />
-    </div>
-    <div class="row vh-80">
-      <div class="col-md-6 text-container">
-        <h1>
-          The AI-Driven Product Launch Toolbox
-        </h1>
-        <h4>
-          Easy and accurate software that predicts demand for products before and after launch. With Artificial
-          Intelligence, Simporter provides everything you need to be
-          <a href="javascript:void(0);" title="first mover">the
-            first mover</a> in your market.
-        </h4>
-        <div>
-          <form class="contact-form" onsubmit="return sendEmail(event, 'emailInput1')">
-            <input type="text" id="emailInput1" placeholder="Enter your email" />
-            <button type="submit">Demo</button>
-          </form>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="svg-image">
-          <img class="img-responsive" src="assets/img/Video.png" alt="attribute rankings" />
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="trusted">
-        Trusted by data leaders across the world
-      </div>
-    </div>
-    <div class="row">
-      <div class="brands-list">
-        <ul>
-          <li>
-            <img src="assets/img/Microsoft_logo_(2012).svg" alt="Microsoft" />
-          </li>
-          <li>
-            <img src="assets/img/Twitter_bird_logo_2012_upd.svg" alt="Twitter" />
-          </li>
-          <li>
-            <img src="assets/img/Google_2015_logo.svg" alt="Google" />
-          </li>
-          <li>
-            <img src="assets/img/YouTube_Logo_2017.svg" alt="YouTube" />
-          </li>
-          <li>
-            <img src="assets/img/Best_Buy_Logo.png" style="width: 100px" alt="Best Buy" />
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="divider">
-        <img src="assets/img/_After we acquired a.svg" alt="divider">
-      </div>
-    </div>
-    <div class="row">
-      <div class="quote">
-        "After just a few of our product launches, we realized that having this data is a necessity, not a luxury."
-        <span>
-          - Chief Marketing Officer at a Fortune 500
-        </span>
-      </div>
-    </div>
+  <div id="title-section">
+    <h2>Learn more about how it works</h2>
+    <h1>
+      The backend 
+      of Simporter
+    </h1>
+  </div>
+  <div id="video-section">
+    <img src="/assets/img/video_background.svg" alt="video-background" />
+    <span class="video-play-button">
+      <span>
+        <img src="/assets/img/play_video_button.svg" alt="play-video-button" />
+      </span>
+    </span>
   </div>
   <div id="section2">
     <div class="row">
       <div class="col-12">
-        <div class="features">Our features</div>
-        <div class="keys-success">The keys to your product launch success</div>
+        <div class="keys-success">
+          Simporter is powered by AI, and there are 4 layers of artificial intelligence involved in Simporter technology: 
+        </div>
       </div>
     </div>
 
@@ -349,7 +290,6 @@
     </div>
   </footer>
   <script defer src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
-
   <!-- Hotjar Tracking Code for https://simporterwebsite.z6.web.core.windows.net -->
   <script>
     (function (h, o, t, j, a, r) {
@@ -361,6 +301,12 @@
       a.appendChild(r);
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
   </script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+       emailjs.init("user_uc6wnW2z29UHYrhdoHr0S");
+    })();
+ </script>
   <script type="text/javascript">
     function validateEmail(email) {
       var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -382,18 +328,14 @@
         from_email: emailFromForm,
         report_name: 'Simporter landing page'
       }
-      grecaptcha.ready(function () {
-        grecaptcha.execute('6Ldk47IUAAAAAGlZGrolQkgeNsApDdEpFItgeOaV', { action: 'homepage' }).then(function (token) {
-          emailjs.send(service_id, template_id, template_params).then(
-            function (response) {
-              alert("Email sent");
-            },
-            function (error) {
-              alert("Error when sending email")
-            }
-          );
-        });
-      });
+      emailjs.send(service_id, template_id, template_params).then(
+        function (response) {
+          alert("Email sent");
+        },
+        function (error) {
+          alert("Error when sending email")
+        }
+      );
     }
   </script>
 </body>
