@@ -1,0 +1,201 @@
+@import 'modules/base';
+
+#title-section {
+    margin-top: 8rem;
+
+    h2 {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #2B3D6B;
+        opacity: 0.4;
+    }
+
+    h1 {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 56px;
+        line-height: 64px;
+        text-align: center;
+        color: #2B3D6B;
+        margin: 1rem 0;
+    }
+}
+
+#video-section {
+    height: 60vh;
+    position: relative;
+    width: 100%;
+
+    img {
+        display: block;
+        margin: auto;
+        width: 50%;
+        height: 100%;
+    }
+
+    .video-play-button {
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+        width: 6rem;
+        height: 6rem;
+        background: rgba(0, 144, 255, 0.2);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        span {
+            display: block;
+            margin: auto;
+            background: #00A6FF;
+            border-radius: 50%;
+            width: 4rem;
+            height: 4rem;
+            margin-top: 1rem;
+        }
+
+        img {
+            display: block;
+            position: relative;
+            width: 2rem;
+            height: 2rem;
+            left: 0;
+            right: 0;
+            top: 1rem;
+            bottom: 0;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+h3 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 39px;
+    color: #2B3D6B;
+    white-space: pre;
+    margin: 0 10%;
+}
+
+#separate-card-section {
+    margin-bottom: 4rem;
+
+    .card {
+        width: 80%;
+        margin: auto;
+        background: #FFFFFF;
+        box-shadow: 0px 12px 40px rgba(209, 220, 246, 0.4);
+        border-radius: 8px;
+        padding: 2rem 4rem;
+        position: relative;
+
+        .heading {
+            font-family: Ubuntu;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 28px;
+            line-height: 39px;
+            color: #2B3D6B;
+            padding: 1.5rem 0;
+        }
+
+        .sub-heading {
+            font-family: Ubuntu;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 27px;
+            color: #2B3D6B;
+            opacity: 0.8;
+            padding: 1rem 0;
+        }
+
+        .right-bottom-circle {
+            width: 160px;
+            height: 160px;
+            background: #00A6FF;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border-radius: 170px 0 0 0;
+        }
+    }
+}
+
+#heading-section {
+    margin-top: 4rem;
+
+    h2 {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 56px;
+        line-height: 64px;
+        text-align: center;
+        color: #2B3D6B;
+        margin: 1rem 0;
+    }
+
+    h3 {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 27px;
+        text-align: center;
+        color: #2B3D6B;
+        opacity: 0.72;
+    }
+}
+
+#cards-section {
+    .row {
+        margin: 0 5%;
+    }
+
+    .card-image {
+        padding: 10%;
+        height: 500px;
+    }
+
+    .card {
+        background: #FFFFFF;
+        box-shadow: 0px 12px 40px rgba(209, 220, 246, 0.4);
+        border-radius: 16px;
+        padding: 4rem;
+        margin: 4rem 0;
+        .heading {
+            margin: 1rem 0;
+            font-family: Ubuntu;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            color: #2B3D6B;
+        }
+
+        .sub-heading {
+            font-family: Ubuntu;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 27px;
+            color: #2B3D6B;
+            opacity: 0.72;
+        }
+    }
+}
