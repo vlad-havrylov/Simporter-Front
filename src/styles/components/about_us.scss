@@ -10,7 +10,9 @@
     text-transform: uppercase;
     color: #2B3D6B;
     opacity: 0.4;
-    margin-top: 5rem;
+    display: block;
+    width: 100%;
+    margin-top: 10rem;
 }
 
 .first-section-heading {
@@ -22,7 +24,10 @@
     text-align: center;
     color: #2B3D6B;
     padding: 0 9rem;
-    white-space: pre;
+    white-space: pre-line;
+    margin-bottom: 5rem;
+    display: block;
+    width: 100%;
 }
 
 .text-center {
@@ -43,15 +48,38 @@ h3 {
 }
 
 .relative-1 {
-    width: 400px !important;
+    width: 350px !important;
     position: relative;
     top: -180px;
-    left: -120px;
+    left: -150px;
 }
 
 .relative-2 {
-    width: 400px !important;
+    width: 350px !important;
     position: relative;
     top: -180px;
-    right: -520px;
+    right: -450px;
+}
+
+.clover {
+    margin: 8rem 0 10rem 0;
+}
+
+.container-section {
+    .section-left {
+        padding-right: 2rem;
+        padding-left: 10%;
+    }
+    .section-right {
+        padding-left: 4rem;
+        padding-right: 10%;
+    }
+}
+
+.nav-icon {
+    margin-bottom: 0.7rem;
+}
+
+.container-section {
+    height: 75vh;
 }
