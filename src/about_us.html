@@ -23,13 +23,6 @@
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/fonts/ubuntu/ubuntu.css" media="none" onload="if(media!='all')media='all'">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("user_uc6wnW2z29UHYrhdoHr0S");
-    })();
-  </script>
-  <script src="https://www.google.com/recaptcha/api.js?render=6Ldk47IUAAAAAGlZGrolQkgeNsApDdEpFItgeOaV"></script>
 </head>
 
 <body>
@@ -42,30 +35,31 @@
         <div class="col-md-6 p-0 float-right">
           <ul class="nav navbar-collapse">
             <li>
-              <a href="javasript:void(0);" title="Home">
+              <a href="index.html" title="Home">
                 Home
               </a>
             </li>
             <li class="dropdown">
               <a href="javascript:;" class="dropbtn" title="Products">
                 Products
-                <img src="/assets//img/dropdows_icon.svg" alt="dropdown_icon"/>
+                <img src="/assets//img/dropdows_icon.svg" alt="dropdown_icon" />
               </a>
               <div id="productsDropdown" class="dropdown-content">
                 <a href="retailers.html">For Retailers</a>
                 <a href="manufacturers.html">For Manufacturers</a>
               </div>
             </li>
-            <li class="active">
-              <a href="how-it-works.html" title="How it works">
+            <li>
+              <a href="javasript:void(0);" title="How it works">
                 How it works
               </a>
             </li>
-            <li>
+            <li class="active">
               <a href="about_us.html" title="Blog">
                 About us
               </a>
             </li>
+          </li>
             <li>
               <a href="javasript:void(0);" title="Blog">
                 Blog
@@ -90,92 +84,46 @@
     <div class="wave">
       <img src="assets/img/Wave.svg" alt="wave" />
     </div>
-    <div class="row vh-80">
-      <div class="col-md-6 text-container">
-        <h1>
-          The AI-Driven Product Launch Toolbox
-        </h1>
-        <h4>
-          Easy and accurate software that predicts demand for products before and after launch. With Artificial
-          Intelligence, Simporter provides everything you need to be
-          <a href="javascript:void(0);" title="first mover">the
-            first mover</a> in your market.
-        </h4>
-        <div>
-          <form class="contact-form" onsubmit="return sendEmail(event, 'emailInput1')">
-            <input type="text" id="emailInput1" placeholder="Enter your email" />
-            <button type="submit">Demo</button>
-          </form>
-        </div>
+    <div class="row">
+      <div class="col-md-12 text-container first-section-sub-heading">
+        About us
       </div>
-      <div class="col-md-6">
-        <div class="svg-image">
-          <img class="img-responsive" src="assets/img/Video.png" alt="attribute rankings" />
-        </div>
-      </div>
+      <div class="col-md-12 first-section-heading">
+          Simporter is the only SaaS platform that makes sales
+          predictions by cross-analyzing sales data, social
+           media, and customer reviews.
+      </div>  
     </div>
     <div class="row">
-      <div class="trusted">
-        Trusted by data leaders across the world
-      </div>
-    </div>
-    <div class="row">
-      <div class="brands-list">
-        <ul>
-          <li>
-            <img src="assets/img/Microsoft_logo_(2012).svg" alt="Microsoft" />
-          </li>
-          <li>
-            <img src="assets/img/Twitter_bird_logo_2012_upd.svg" alt="Twitter" />
-          </li>
-          <li>
-            <img src="assets/img/Google_2015_logo.svg" alt="Google" />
-          </li>
-          <li>
-            <img src="assets/img/YouTube_Logo_2017.svg" alt="YouTube" />
-          </li>
-          <li>
-            <img src="assets/img/Best_Buy_Logo.png" style="width: 100px" alt="Best Buy" />
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="divider">
-        <img src="assets/img/_After we acquired a.svg" alt="divider">
-      </div>
-    </div>
-    <div class="row">
-      <div class="quote">
-        "After just a few of our product launches, we realized that having this data is a necessity, not a luxury."
-        <span>
-          - Chief Marketing Officer at a Fortune 500
-        </span>
+      <div class="col-md-12">
       </div>
     </div>
   </div>
   <div id="section2">
-    <div class="row">
-      <div class="col-12">
-        <div class="features">Our features</div>
-        <div class="keys-success">The keys to your product launch success</div>
-      </div>
-    </div>
 
-    <div class="row container-section">
+    <div class="row container-section aligned">
       <div class="col-md-6 section-header">
-        <div class="number">01</div>
         <div class="heading">
-          Predict demand for new concepts
+          If you’re a brand manufacturer or retailer, we understand the pressure you’re under.
         </div>
         <div class="sub-heading">
-          Our AI algorithms tell you which products to launch, which will be best-sellers, and which products will
-          fail.
+          It’s tough to launch new products, most of them fail, and that puts your market 
+          share at risk. With Simporter, you don’t need to rely on guesswork anymore. Our 
+          platform lets you make better decisions about which products to develop, and 
+          how to market them to be sure to hit your numbers. You get comprehensive,
+          easily accessible demand predictions that benefit the entire team: category
+          managers, consumer insights teams, marketers, purchasing departments, sales 
+          leaders, and supply chain management. 
+          <br/><br/>
+          To collect data and turn it into streamlined, actionable recommendations, 
+          Simporter employs Artificial Intelligence (AI) and Natural Language Processing.
+          <br/><br/>
+          We’re located in Atlanta, GA, Sunnyvale, CA, Warsaw, Poland, and Kyiv, Ukraine.
         </div>
       </div>
       <div class="col-md-6">
         <div class="svg-image">
-          <img class="img-responsive" src="assets/img/section_image6.png" alt="first section image" />
+          <img class="img-responsive" src="assets/img/cart_img.svg" alt="first section image" />
         </div>
       </div>
       <div class="wave">
@@ -183,102 +131,56 @@
       </div>
     </div>
 
-    <div class="row container-section">
-      <div class="col-md-6 section-header">
-        <div class="number">02</div>
-        <div class="heading">
-          AI-driven insights, as easy as pie
-        </div>
-        <div class="sub-heading">
-          You don't need to guess anymore or be overloaded with complicated analytics solutions. Our system requires
-          zero training to get accurate insights.
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="svg-image">
-          <img class="img-responsive" src="assets/img/section_image5.png" alt="second section image" />
-        </div>
-      </div>
-      <div class="wave">
-        <img src="assets/img/decor-bg-1.svg" alt="wave" />
+    <div class="row aligned">
+      <div class="text-center">
+        <img src="assets/img/clover.svg" alt="clover" />
+        <h3>
+          To collect data and turn it into streamlined, actionable reports, Simporter 
+          employs Artificial Intelligence (AI) and Neural Networks.
+        </h3>
       </div>
     </div>
 
     <div class="row container-section">
       <div class="col-md-6 section-header">
-        <div class="number">03</div>
+        <div class="nav-icon">
+            <img src="assets/img/navigation_pin.svg" alt="pin" />
+        </div>
         <div class="heading">
-          Secure and quick
-          to set up
+          Atlanta
         </div>
         <div class="sub-heading">
-          Setup is hassle-free. You can upload data in any readable format. Our systems are secured on the cloud and
-          can be up and running at the click of a button.
+          Our headquarters are based in Atlanta, Georgia — 
+          where we leverage the ecosystem's talent pool for 
+          delivering first class customer experience.
         </div>
       </div>
       <div class="col-md-6">
         <div class="svg-image">
-          <img class="img-responsive" src="assets/img/section_image1.png" alt="third section image" />
+          <img class="img-responsive" src="assets/img/atlanta_1.png" alt="atlanta 1" />
+          <img class="img-responsive relative-1" src="assets/img/atlanta_2.png" alt="atlanta 2" />
         </div>
       </div>
     </div>
 
     <div class="row container-section">
-      <div class="col-md-6 section-header">
-        <div class="number">04</div>
-        <div class="heading">
-          Track competitor
-          launches
-        </div>
-        <div class="sub-heading">
-          Distinguish competitive launches that you need to defend against from ones that are just noise. With
-          attribute-level analysis, our algorithms tell you about the launches to focus on and filter out the ones that
-          aren’t a risk to your market share.
-        </div>
-      </div>
       <div class="col-md-6">
         <div class="svg-image">
-          <img class="img-responsive" src="assets/img/section_image4.png" alt="third section image" />
+          <img class="img-responsive" src="assets/img/kyiv_1.png" alt="kyiv 1" />
+          <img class="img-responsive relative-2" src="assets/img/kyiv_2.png" alt="kyiv 2" />
         </div>
       </div>
-      <div class="wave">
-        <img src="assets/img/decor-bg-3.svg" alt="wave" />
+      <div class="col-md-6 section-header" style="padding-left: 0">
+        <div class="nav-icon">
+          <img src="assets/img/navigation_pin.svg" alt="pin" />
       </div>
-    </div>
-
-    <div class="row container-section">
-      <div class="col-md-6 section-header">
-        <div class="number">05</div>
         <div class="heading">
-          Read and React in Market
+         Ukraine
         </div>
         <div class="sub-heading">
-          Get the earliest possible read on consumer response to your new launches. Gain insights in just hours after
-          launching, so you can adjust as needed.
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="svg-image">
-          <img class="img-responsive" src="assets/img/section_image3.png" alt="third section image" />
-        </div>
-      </div>
-    </div>
-
-    <div class="row container-section">
-      <div class="col-md-6 section-header">
-        <div class="number">06</div>
-        <div class="heading">
-          Innovate with more
-          reward, less risk
-        </div>
-        <div class="sub-heading">
-          Companies using Simporter increase sales by 22%. Reduce risk by bringing science to critical decision making,
-          multiplying your launch rate of success.
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="svg-image">
-          <img class="img-responsive" src="assets/img/section_image2.png" alt="third section image" />
+          We run our data science and technical team out of
+          Kyiv, Ukraine — a city with world-class IT talent and 
+          algorithmic expertise.
         </div>
       </div>
     </div>
@@ -337,7 +239,7 @@
       </div>
       <div>
         <ul>
-        <li><a href="privacy-policy.html" title="Privacy policy">Privacy Policy</a></li>
+          <li><a href="privacy-policy.html" title="Privacy policy">Privacy Policy</a></li>
         </ul>
       </div>
       <div>
@@ -359,21 +261,33 @@
     </div>
   </footer>
   <script defer src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
-
   <!-- Hotjar Tracking Code for https://simporterwebsite.z6.web.core.windows.net -->
   <script>
     (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      h._hjSettings = { hjid: 1411012, hjsv: 6 };
+      h.hj = h.hj || function () {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 1411012,
+        hjsv: 6
+      };
       a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script'); r.async = 1;
+      r = o.createElement('script');
+      r.async = 1;
       r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
       a.appendChild(r);
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
   </script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_uc6wnW2z29UHYrhdoHr0S");
+    })();
+  </script>
   <script type="text/javascript">
     function validateEmail(email) {
-      var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      var re =
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(email);
     }
 
@@ -392,18 +306,14 @@
         from_email: emailFromForm,
         report_name: 'Simporter landing page'
       }
-      grecaptcha.ready(function () {
-        grecaptcha.execute('6Ldk47IUAAAAAGlZGrolQkgeNsApDdEpFItgeOaV', { action: 'homepage' }).then(function (token) {
-          emailjs.send(service_id, template_id, template_params).then(
-            function (response) {
-              alert("Email sent");
-            },
-            function (error) {
-              alert("Error when sending email")
-            }
-          );
-        });
-      });
+      emailjs.send(service_id, template_id, template_params).then(
+        function (response) {
+          alert("Email sent");
+        },
+        function (error) {
+          alert("Error when sending email")
+        }
+      );
     }
   </script>
 </body>

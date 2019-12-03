@@ -80,6 +80,24 @@ module.exports = {
       hash: false,
       template: './' + src_Path + '/how-it-works.html',
       filename: 'how-it-works.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: false,
+      template: './' + src_Path + '/retailers.html',
+      filename: 'retailers.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: false,
+      template: './' + src_Path + '/manufacturers.html',
+      filename: 'manufacturers.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: false,
+      template: './' + src_Path + '/about_us.html',
+      filename: 'about_us.html'
     })
   ]
 };

@@ -23,13 +23,6 @@
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/fonts/ubuntu/ubuntu.css" media="none" onload="if(media!='all')media='all'">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("user_uc6wnW2z29UHYrhdoHr0S");
-    })();
-  </script>
-  <script src="https://www.google.com/recaptcha/api.js?render=6Ldk47IUAAAAAGlZGrolQkgeNsApDdEpFItgeOaV"></script>
 </head>
 
 <body>
@@ -42,11 +35,11 @@
         <div class="col-md-6 p-0 float-right">
           <ul class="nav navbar-collapse">
             <li>
-              <a href="javasript:void(0);" title="Home">
+              <a href="index.html" title="Home">
                 Home
               </a>
             </li>
-            <li class="dropdown">
+            <li class="dropdown active">
               <a href="javascript:;" class="dropbtn" title="Products">
                 Products
                 <img src="/assets//img/dropdows_icon.svg" alt="dropdown_icon"/>
@@ -56,7 +49,7 @@
                 <a href="manufacturers.html">For Manufacturers</a>
               </div>
             </li>
-            <li class="active">
+            <li>
               <a href="how-it-works.html" title="How it works">
                 How it works
               </a>
@@ -86,79 +79,29 @@
       </div>
     </div>
   </header>
-  <div id="section1">
-    <div class="wave">
-      <img src="assets/img/Wave.svg" alt="wave" />
-    </div>
-    <div class="row vh-80">
-      <div class="col-md-6 text-container">
-        <h1>
-          The AI-Driven Product Launch Toolbox
-        </h1>
-        <h4>
-          Easy and accurate software that predicts demand for products before and after launch. With Artificial
-          Intelligence, Simporter provides everything you need to be
-          <a href="javascript:void(0);" title="first mover">the
-            first mover</a> in your market.
-        </h4>
-        <div>
-          <form class="contact-form" onsubmit="return sendEmail(event, 'emailInput1')">
-            <input type="text" id="emailInput1" placeholder="Enter your email" />
-            <button type="submit">Demo</button>
-          </form>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="svg-image">
-          <img class="img-responsive" src="assets/img/Video.png" alt="attribute rankings" />
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="trusted">
-        Trusted by data leaders across the world
-      </div>
-    </div>
-    <div class="row">
-      <div class="brands-list">
-        <ul>
-          <li>
-            <img src="assets/img/Microsoft_logo_(2012).svg" alt="Microsoft" />
-          </li>
-          <li>
-            <img src="assets/img/Twitter_bird_logo_2012_upd.svg" alt="Twitter" />
-          </li>
-          <li>
-            <img src="assets/img/Google_2015_logo.svg" alt="Google" />
-          </li>
-          <li>
-            <img src="assets/img/YouTube_Logo_2017.svg" alt="YouTube" />
-          </li>
-          <li>
-            <img src="assets/img/Best_Buy_Logo.png" style="width: 100px" alt="Best Buy" />
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="divider">
-        <img src="assets/img/_After we acquired a.svg" alt="divider">
-      </div>
-    </div>
-    <div class="row">
-      <div class="quote">
-        "After just a few of our product launches, we realized that having this data is a necessity, not a luxury."
-        <span>
-          - Chief Marketing Officer at a Fortune 500
-        </span>
-      </div>
-    </div>
+  <div id="title-section">
+    <h2>Learn more about how it works</h2>
+    <h1>
+      The backend 
+      of Simporter
+    </h1>
+  </div>
+  <div id="video-section">
+    <img src="/assets/img/video_background.svg" alt="video-background" />
+    <span class="video-play-button">
+      <span>
+        <img src="/assets/img/play_video_button.svg" alt="play-video-button" />
+      </span>
+    </span>
   </div>
   <div id="section2">
     <div class="row">
       <div class="col-12">
-        <div class="features">Our features</div>
-        <div class="keys-success">The keys to your product launch success</div>
+        <h3>
+          Simporter is powered by AI, and there 
+          are 4 layers of artificial intelligence 
+          involved in Simporter technology: 
+        </h3>
       </div>
     </div>
 
@@ -166,11 +109,10 @@
       <div class="col-md-6 section-header">
         <div class="number">01</div>
         <div class="heading">
-          Predict demand for new concepts
+          Natural Language Processing
         </div>
         <div class="sub-heading">
-          Our AI algorithms tell you which products to launch, which will be best-sellers, and which products will
-          fail.
+          Recognizes writing in human languages and translates it into data that computers can process and quantify. Simporter applies the technology to structure textual data (i.e. social media, customer reviews, qualitative feedback) into quantitative data.
         </div>
       </div>
       <div class="col-md-6">
@@ -187,11 +129,10 @@
       <div class="col-md-6 section-header">
         <div class="number">02</div>
         <div class="heading">
-          AI-driven insights, as easy as pie
+          Neural Networks
         </div>
         <div class="sub-heading">
-          You don't need to guess anymore or be overloaded with complicated analytics solutions. Our system requires
-          zero training to get accurate insights.
+          Detect underlying relationships in data sets and analyze them, mimicking the human brain. Simporter uses Neural Networks to discover variable weights and isolate relevant data from noise, and to find correlations between all data sources. Neural Networks are trained with historical sales data.
         </div>
       </div>
       <div class="col-md-6">
@@ -208,12 +149,10 @@
       <div class="col-md-6 section-header">
         <div class="number">03</div>
         <div class="heading">
-          Secure and quick
-          to set up
+          Predictive modeling
         </div>
         <div class="sub-heading">
-          Setup is hassle-free. You can upload data in any readable format. Our systems are secured on the cloud and
-          can be up and running at the click of a button.
+          Uses data mining and probability to forecast outcomes. A multitude of algorithms is employed to create highly accurate long-term predictions.
         </div>
       </div>
       <div class="col-md-6">
@@ -227,13 +166,10 @@
       <div class="col-md-6 section-header">
         <div class="number">04</div>
         <div class="heading">
-          Track competitor
-          launches
+          Machine Learning
         </div>
         <div class="sub-heading">
-          Distinguish competitive launches that you need to defend against from ones that are just noise. With
-          attribute-level analysis, our algorithms tell you about the launches to focus on and filter out the ones that
-          aren’t a risk to your market share.
+          Automates analytical model building. Every time a prediction is made and verified with actual sales data, the system becomes smarter and more accurate.
         </div>
       </div>
       <div class="col-md-6">
@@ -241,44 +177,142 @@
           <img class="img-responsive" src="assets/img/section_image4.png" alt="third section image" />
         </div>
       </div>
-      <div class="wave">
-        <img src="assets/img/decor-bg-3.svg" alt="wave" />
+    </div>
+  </div>
+  <div id="separate-card-section">
+    <div class="card">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="heading">
+            Hyper-analogical sales correlations
+          </div>
+          <div class="sub-heading">
+            With AI, we can collect more data to predict outcomes with increased accuracy.
+            Instead of looking at 2-3 similar products, we look at 30-40 and categorize them based 
+            on product attributes, like color, flavor, size, price, and many more.
+            Then, Simporter identifies weights of each attribute, using AI Neural Networks, Predictive Modeling, 
+            and Machine Learning to quantify data and present it as a comprehensive report.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="heading">
+            Verification
+          </div>
+          <div class="sub-heading">
+            Simporter predictions have proven to reach up to 93% accuracy.
+            Verified with actual sales data from when our predictions are made, 
+            Simporter has a track record of forecasts that become a reality.
+          </div>
+        </div>
+      </div>
+      <div class="right-bottom-circle"></div>
+    </div>
+  </div>
+  <div id="heading-section">
+    <h2>Using Simporter</h2>
+    <h3>
+      Simporter is incredibly easy to use. 
+      All the interaction with the service occurs via the visual interface, and doesn’t 
+      require special knowledge or skills.
+    </h3>
+  </div>
+  <div id="cards-section">
+    <div class="row">
+      <div class="col-md-6">
+        <img class="card-image" src="/assets/img/cards/card_image_1.svg" alt="card-1" />
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="icon">
+            <img src="/assets/img/cards/Sign-in.svg" alt="sign-in" />
+          </div>
+          <div class="heading">
+            Log in any place, any time
+          </div>
+          <div class="sub-heading">
+            The service is cloud-based, so you’re not tied to your computer. 
+            Just log in whenever you need and start working with data.
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="row container-section">
-      <div class="col-md-6 section-header">
-        <div class="number">05</div>
-        <div class="heading">
-          Read and React in Market
-        </div>
-        <div class="sub-heading">
-          Get the earliest possible read on consumer response to your new launches. Gain insights in just hours after
-          launching, so you can adjust as needed.
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="icon">
+            <img src="/assets/img/cards/Compiling.svg" alt="compiling" />
+          </div>
+          <div class="heading">
+            Integrate your data in under 3 minutes
+          </div>
+          <div class="sub-heading">
+            Use the 10-question questionnaire to guide you through 
+            the process of data upload. Follow the instructions and 
+            add information like the date of the product launch or 
+            product images, then let the service do the work.
+          </div>
         </div>
       </div>
       <div class="col-md-6">
-        <div class="svg-image">
-          <img class="img-responsive" src="assets/img/section_image3.png" alt="third section image" />
+        <img class="card-image" src="/assets/img/cards/card_image_2.svg" alt="card-2" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img class="card-image" width="650" src="/assets/img/cards/card_image_3.svg" alt="card-3" />
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="icon">
+            <img src="/assets/img/cards/Chart-bar.svg" alt="sign-in" />
+          </div>
+          <div class="heading">
+            Get immediate results
+          </div>
+          <div class="sub-heading">
+            You don’t have to wait for months to get your forecasts. 
+            With Simporter, your data is at fingertip access, readily 
+            available in the service interface.
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="row container-section">
-      <div class="col-md-6 section-header">
-        <div class="number">06</div>
-        <div class="heading">
-          Innovate with more
-          reward, less risk
-        </div>
-        <div class="sub-heading">
-          Companies using Simporter increase sales by 22%. Reduce risk by bringing science to critical decision making,
-          multiplying your launch rate of success.
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="icon">
+            <img src="/assets/img/cards/Combined Shape.svg" alt="combined-shape" />
+          </div>
+          <div class="heading">
+            Navigate advanced analytics in the intuitive interface
+          </div>
+          <div class="sub-heading">
+            Move between the tabs to view reports on 
+            competition or attribution. The data is conveniently 
+            structured to let you interpret it with ease.
+          </div>
         </div>
       </div>
       <div class="col-md-6">
-        <div class="svg-image">
-          <img class="img-responsive" src="assets/img/section_image2.png" alt="third section image" />
+        <img class="card-image" src="/assets/img/cards/card_image_4.svg" alt="card-4" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img class="card-image" src="/assets/img/cards/card_image_5.svg" alt="card-5" />
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="icon">
+            <img src="/assets/img/cards/Cloudy.svg" alt="cloudy" />
+          </div>
+          <div class="heading">
+            Have your data secured in Microsoft Cloud
+          </div>
+          <div class="sub-heading">
+            With Simporter, your data is protected by Microsoft’s 
+            most secure databases.
+          </div>
         </div>
       </div>
     </div>
@@ -359,7 +393,6 @@
     </div>
   </footer>
   <script defer src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
-
   <!-- Hotjar Tracking Code for https://simporterwebsite.z6.web.core.windows.net -->
   <script>
     (function (h, o, t, j, a, r) {
@@ -371,6 +404,12 @@
       a.appendChild(r);
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
   </script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+       emailjs.init("user_uc6wnW2z29UHYrhdoHr0S");
+    })();
+ </script>
   <script type="text/javascript">
     function validateEmail(email) {
       var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -392,18 +431,14 @@
         from_email: emailFromForm,
         report_name: 'Simporter landing page'
       }
-      grecaptcha.ready(function () {
-        grecaptcha.execute('6Ldk47IUAAAAAGlZGrolQkgeNsApDdEpFItgeOaV', { action: 'homepage' }).then(function (token) {
-          emailjs.send(service_id, template_id, template_params).then(
-            function (response) {
-              alert("Email sent");
-            },
-            function (error) {
-              alert("Error when sending email")
-            }
-          );
-        });
-      });
+      emailjs.send(service_id, template_id, template_params).then(
+        function (response) {
+          alert("Email sent");
+        },
+        function (error) {
+          alert("Error when sending email")
+        }
+      );
     }
   </script>
 </body>

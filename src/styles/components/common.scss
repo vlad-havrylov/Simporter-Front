@@ -8,6 +8,12 @@ html, body {
         height: auto;
     }
 
+    &.aligned {
+        .section-header {
+            padding: 0rem 0rem 0rem 10%;
+        }
+    }
+
     .section-header {
         padding: 0rem 0rem 0rem 15rem;
 

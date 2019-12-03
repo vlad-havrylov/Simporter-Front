@@ -1,0 +1,57 @@
+.first-section-sub-heading {
+    text-align: center;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #2B3D6B;
+    opacity: 0.4;
+    margin-top: 5rem;
+}
+
+.first-section-heading {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    color: #2B3D6B;
+    padding: 0 9rem;
+    white-space: pre;
+}
+
+.text-center {
+    text-align: center;
+    width: 100%;
+}
+
+h3 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 39px;
+    text-align: center;
+    white-space: pre;
+    margin: 0;
+    width: 100%;
+}
+
+.relative-1 {
+    width: 400px !important;
+    position: relative;
+    top: -180px;
+    left: -120px;
+}
+
+.relative-2 {
+    width: 400px !important;
+    position: relative;
+    top: -180px;
+    right: -520px;
+}

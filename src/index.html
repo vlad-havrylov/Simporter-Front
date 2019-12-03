@@ -46,14 +46,24 @@
                 Home
               </a>
             </li>
-            <li>
-              <a href="javasript:void(0);" title="Products">
+            <li class="dropdown">
+              <a href="javascript:;" class="dropbtn" title="Products">
                 Products
+                <img src="/assets//img/dropdows_icon.svg" alt="dropdown_icon"/>
               </a>
+              <div id="productsDropdown" class="dropdown-content">
+                <a href="retailers.html">For Retailers</a>
+                <a href="manufacturers.html">For Manufacturers</a>
+              </div>
             </li>
             <li>
               <a href="how-it-works.html" title="How it works">
                 How it works
+              </a>
+            </li>
+             <li>
+              <a href="about_us.html" title="Blog">
+                About us
               </a>
             </li>
             <li>
@@ -348,6 +358,8 @@
       </div>
     </div>
   </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
   <script defer src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 
   <!-- Hotjar Tracking Code for https://simporterwebsite.z6.web.core.windows.net -->
@@ -395,6 +407,14 @@
         });
       });
     }
+  </script>
+  <script>
+    (function(){ window.securePrivacy = {'apiKey' : 'dab3548ce31545bc882e862d2b083f0bd8b0e1ba3dae401088ef00b69d8568f7238fe921b4d34b2ea14b4ca800681b48', 'appId': '5de6afe17df5d22fbca2cfdd'};
+    var script = document.createElement("SCRIPT");
+    script.src = 'https://app.secureprivacy.ai/secureprivacy-plugin/web-plugin/secure-privacy-v1.js?v=' + Math.random();
+    script.type = 'text/javascript';
+    document.getElementsByTagName("head")[0].appendChild(script);
+    })();
   </script>
 </body>
 
