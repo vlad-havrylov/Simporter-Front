@@ -51,6 +51,12 @@ module.exports = {
           }
         ]
       },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        use: [{
+          loader: 'file-loader',
+        }],
+      }
     ]
   },
   plugins: [
@@ -65,15 +71,39 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: false,
+      hash: true,
+      template: './' + src_Path + '/index.html',
+      filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
       hash: false,
       template: './' + src_Path + '/privacy-policy.html',
       filename: 'privacy-policy.html'
     }),
     new HtmlWebpackPlugin({
       inject: false,
-      hash: true,
-      template: './' + src_Path + '/index.html',
-      filename: 'index.html'
+      hash: false,
+      template: './' + src_Path + '/how-it-works.html',
+      filename: 'how-it-works.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: false,
+      template: './' + src_Path + '/retailers.html',
+      filename: 'retailers.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: false,
+      template: './' + src_Path + '/manufacturers.html',
+      filename: 'manufacturers.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: false,
+      template: './' + src_Path + '/about_us.html',
+      filename: 'about_us.html'
     }),
     new WebpackMd5Hash()
   ]
