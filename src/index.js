@@ -15,3 +15,8 @@ window.onclick = function (event) {
         document.getElementById("productsDropdown").classList.toggle("show");
     }
 }
+document.body.addEventListener('click', function (evt) {
+    if (evt.target.className === 'toggler') {
+        document.getElementById('navbar').style.display = document.getElementById('navbar').style.display == 'block' ? 'none' : 'block';
+    }
+}, false);

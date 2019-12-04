@@ -23,7 +23,7 @@ header {
         }
 
         @media(max-width: 768px) {
-            padding: 2rem 0.5rem 0 0.5rem;
+            padding: 1rem 0.5rem 1rem 0.5rem;
         }
     }
 
@@ -45,8 +45,19 @@ header {
             }
         }
 
+        .menu-left-gap {
+            margin-left: 3rem;
+        }
+
         @media (max-width: 768px) {
-            display: none;
+            display: block;
+
+            li {
+                width: 100%;
+                text-align: center;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
         }
 
         &.nav {
@@ -96,6 +107,22 @@ header {
     }
 
     .show {
+        display: block;
+    }
+}
+
+.toggler {
+    display: none;
+    float: right;
+    height: 1.5rem !important;
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        display: none;
+    }
+    .toggler {
         display: block;
     }
 }

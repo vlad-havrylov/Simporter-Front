@@ -52,3 +52,15 @@ html, body {
         }
     }
 }
+
+@media(max-width: 768px) {
+    height: 120vh;
+}
+
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+#ifrmTrustBadge {
+    visibility: hidden;
+}
