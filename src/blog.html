@@ -28,15 +28,15 @@
 <body>
   <header>
     <div class="pt-2">
-      <div class="row navbar">
-        <div class="col-md-6 col-xs-12 logo">
+      <div class="row">
+        <div class="col-md-6 logo">
           <img src="assets/img/Logo.svg" alt="logo">
           <a>
-            <img src="assets/img/menu.svg" class="toggler" alt="menu-toggler" />
-          </a>
+              <img src="assets/img/menu.svg" class="toggler" alt="menu-toggler" />
+            </a>
         </div>
-        <div class="col-md-6 col-xs-12 p-0 float-right" id="navbar">
-          <ul class="nav navbar-nav">
+        <div class="col-md-6 p-0 float-right" id="navbar">
+          <ul class="nav navbar-collapse">
             <li>
               <a href="/" title="Home">
                 Home
@@ -45,7 +45,7 @@
             <li class="dropdown">
               <a href="javascript:;" class="dropbtn" title="Products">
                 Products
-                <img src="assets/img/dropdown_icon.svg" alt="dropdown_icon"/>
+                <img src="assets/img/dropdown_icon.svg" alt="dropdown_icon" />
               </a>
               <div id="productsDropdown" class="dropdown-content">
                 <a href="retailers.html">For Retailers</a>
@@ -57,17 +57,18 @@
                 How it works
               </a>
             </li>
-             <li class="active">
+            <li>
               <a href="about_us.html" title="Blog">
                 About us
               </a>
             </li>
-            <li>
+          </li>
+            <li class="active">
               <a href="blog.html" title="Blog">
                 Blog
               </a>
             </li>
-            <li class="menu-left-gap active">
+            <li class="menu-left-gap  active">
               <a href="http://www.simporter.com/signin.html" title="Sign in">
                 Sign in
               </a>
@@ -82,120 +83,8 @@
       </div>
     </div>
   </header>
-  <div id="section1">
-    <div class="wave">
-      <img src="assets/img/Wave.svg" alt="wave" />
-    </div>
-    <div class="row">
-      <div class="first-section-sub-heading">
-        About us
-      </div>
-      <div class="first-section-heading">
-          Simporter is the only SaaS platform that makes sales
-          predictions by cross-analyzing sales data, social
-           media, and customer reviews.
-      </div>  
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-      </div>
-    </div>
-  </div>
-  <div id="section2">
-
-    <div class="row container-section aligned">
-      <div class="col-md-6 section-header">
-        <div class="heading">
-          If you’re a brand manufacturer or retailer, we understand the pressure you’re under.
-        </div>
-        <div class="sub-heading">
-          It’s tough to launch new products, most of them fail, and that puts your market 
-          share at risk. With Simporter, you don’t need to rely on guesswork anymore. Our 
-          platform lets you make better decisions about which products to develop, and 
-          how to market them to be sure to hit your numbers. You get comprehensive,
-          easily accessible demand predictions that benefit the entire team: category
-          managers, consumer insights teams, marketers, purchasing departments, sales 
-          leaders, and supply chain management. 
-          <br/><br/>
-          To collect data and turn it into streamlined, actionable recommendations, 
-          Simporter employs Artificial Intelligence (AI) and Natural Language Processing.
-          <br/><br/>
-          We’re located in Atlanta, GA, Sunnyvale, CA, Warsaw, Poland, and Kyiv, Ukraine.
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="svg-image">
-          <img class="img-responsive" src="assets/img/cart_img.svg" alt="first section image" />
-        </div>
-      </div>
-      <div class="wave">
-        <img src="assets/img/decor-bg-2.svg" alt="wave" />
-      </div>
-    </div>
-
-    <div class="row aligned clover">
-      <div class="text-center">
-        <img src="assets/img/clover.svg" alt="clover" />
-        <h3>
-          To collect data and turn it into streamlined, actionable reports, Simporter 
-          employs Artificial Intelligence (AI) and Neural Networks.
-        </h3>
-      </div>
-    </div>
-
-    <div class="row container-section">
-      <div class="col-md-6 section-header section-left" style="padding-left: 10%;">
-        <div class="nav-icon">
-            <img src="assets/img/navigation_pin.svg" alt="pin" />
-        </div>
-        <div class="heading">
-          Atlanta
-        </div>
-        <div class="sub-heading">
-          Our headquarters are based in Atlanta, Georgia — 
-          where we leverage the ecosystem's talent pool for 
-          delivering first class customer experience.
-        </div>
-      </div>
-      <div class="col-md-6 section-right">
-        <div class="svg-image">
-          <img class="img-responsive" src="assets/img/atlanta_1.png" alt="atlanta 1" />
-          <img class="img-responsive relative-1" src="assets/img/atlanta_2.png" alt="atlanta 2" />
-        </div>
-      </div>
-    </div>
-
-    <div class="row container-section">
-      <div class="col-md-6 section-left">
-        <div class="svg-image">
-          <img class="img-responsive" src="assets/img/kyiv_1.png" alt="kyiv 1" />
-          <img class="img-responsive relative-2" src="assets/img/kyiv_2.png" alt="kyiv 2" />
-        </div>
-      </div>
-      <div class="col-md-6 section-header section-right">
-        <div class="nav-icon">
-          <img src="assets/img/navigation_pin.svg" alt="pin" />
-      </div>
-        <div class="heading">
-         Ukraine
-        </div>
-        <div class="sub-heading">
-          We run our data science and technical team out of
-          Kyiv, Ukraine — a city with world-class IT talent and 
-          algorithmic expertise.
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="demo">
-    <div>
-      <h2>Get started with Simporter now</h2>
-      <h4>Sign up today for a free demo</h4>
-      <form class="action-form" onsubmit="return sendEmail(event, 'emailInput2')">
-        <input type="text" id="emailInput2" placeholder="Work email address" />
-        <button type="submit">Demo</button>
-      </form>
-    </div>
+  <div class="blog-iframe">
+    <iframe src="https://simporterblog.azurewebsites.net"></iframe>
   </div>
   <footer>
     <div class="row footer-menu" style="display: none">
@@ -263,8 +152,7 @@
     </div>
   </footer>
   <script defer src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
-  
-<!-- Hotjar Tracking Code for https://www.simporter.com -->
+  <!-- Hotjar Tracking Code for https://www.simporter.com -->
 <script>
   (function(h,o,t,j,a,r){
       h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -275,7 +163,6 @@
       a.appendChild(r);
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-
   <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
   <script type="text/javascript">
     (function () {

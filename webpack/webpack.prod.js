@@ -105,6 +105,12 @@ module.exports = {
       template: './' + src_Path + '/about_us.html',
       filename: 'about_us.html'
     }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: false,
+      template: './' + src_Path + '/blog.html',
+      filename: 'blog.html'
+    }),
     new WebpackMd5Hash()
   ]
 };

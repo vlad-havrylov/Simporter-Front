@@ -17,6 +17,13 @@ header {
         justify-content: start;
         align-items: center;
 
+        a {
+            width: 100%;
+            img {
+                width: 2rem !important;
+            }
+        }
+
         img {
             width: 10rem;
             height: 2rem;
